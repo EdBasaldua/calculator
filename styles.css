@@ -39,6 +39,22 @@ span {
     line-height: 70px;
 }
 
+
+span:hover {
+    background-color: rgba(71, 9, 53, 0.2);
+    cursor: pointer;
+}
+
+
+.round-bottom-right {
+    border-bottom-right-radius: 20px;
+}
+
+.round-bottom-left{
+    border-bottom-left-radius: 20px;
+}
+
+
 #viewer {
 
     display: flex;
