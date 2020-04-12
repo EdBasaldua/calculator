@@ -4,51 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
     
 </head>
 <body>
     <!-- Max width and height 1024  and 1366 -->
 
     <div id="calculator">
-        <div id="viewer" class="column">
-            <div id="operations">2536 + 419 +</div>
-            <div id="text-result"><h1>2955</h1></div>
+        <div id="viewer">
+            <div id="show-operations" class="">2536 + 419 +</div>
+            <div id="text-result" class="">2955</div>
         </div>
         <div id="symbols">      
-               <div class="clear-and-numbers">
+               <div class="row">
+                    <div class="column">
 
-                    <div class="modifiers">
-                        <button id="clear">C</button>
-                        <button id="sign">±</button>
-                        <button id="percentage">%</button>
+                        <div class="modifiers-and-numbers">
+                            <div class="modifiers">
+                                <div class="row">
+                                    <span id="clear">C</span>
+                                    <span id="sign">±</span>
+                                    <span id="percentage">%</span>
+                                </div>
+                            </div>
+        
+                            <div class="numbers">
+                                <div class="row">
+                                    <span id="seven">7</span>
+                                    <span id="eight">8</span>
+                                    <span id="nine">9</span>
+                                </div>
+                            <div class="row">
+                                    <span id="four">4</span>
+                                    <span id="five">5</span>
+                                    <span id="six">6</span>
+                            </div>
+                                <div class="row">
+                                    <span id="three">3</span>
+                                    <span id="two">2</span>
+                                    <span id="one">1</span>
+                                </div>
+                            </div>   
+        
+                        </div>  
+        
+                        <div class="point-zero">
+                            <div class="row">
+                                <span id="point">.</span>
+                                <span id="zero">0</span>
+                                <span id="back">&lt;</span>
+                            </div>
+                        </div>
+
                     </div>
+    
+                   <div class="operations column">
 
-                    <div class="numbers">
-                        <button id="seven">7</button>
-                        <button id="eight">8</button>
-                        <button id="nine">9</button>
-                        <button id="four">4</button>
-                        <button id="five">5</button>
-                        <button id="six">6</button>
-                        <button id="three">3</button>
-                        <button id="two">2</button>
-                        <button id="one">1</button>
-                    </div>   
+                        <span id="division">÷</span>
+                        <span id="multiplication">x</span>
+                        <span id="subtraction">-</span>
+                        <span id="addition">+</span>
+                        <span id="equal">=</span>
 
-               </div>  
-
-               <div class="operations">
-                   <button id="division">÷</button>
-                   <button id="multiplication">X</button>
-                   <button id="subtraction">-</button>
-                   <button id="addition">+</button>
-                   <button id="equal">=</button>
-               </div>
-
-               <div class="point-zero">
-                   <button id="point">.</button>
-                   <button id="zero">0</button>
-                   <button id="back">&lt;</button>
+                    </div>
                </div>
             
         </div>
