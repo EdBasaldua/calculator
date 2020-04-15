@@ -31,8 +31,7 @@ span {
     border: none;
     width: 70px;
     height: 70px;
-    text-align: center;
-    
+    text-align: center;   
     line-height: 70px;
 }
 
@@ -85,14 +84,77 @@ span:hover {
     justify-content: center;
 }
 
-.row {
+.row, .toogle-row-column {
     display: flex;
     /* justify-content: space-around; */
     
 }
 
-.column {
+.column, .toogle-column-row {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+}
+
+
+
+@media (orientation: landscape) {
+    #calculator {
+        width: 490px;
+        background-image: url('bg-turned.png');
+        margin-top: 30px;
+    }
+    #viewer {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0px 25px 15px 0;
+        height: 55px;
+        border-radius: 20px 20px 0 0;
+    }
+    #symbols {
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .toogle-row-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+    }
+
+    .toogle-column-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+    }
+
+    .modifiers-and-numbers {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #show-operations {
+    
+        padding-bottom: 5px;
+        margin-bottom: -15px;
+    }
+
+    #equal {
+        height: 140px;
+    }
+
+    .round-bottom-left{
+        border-bottom-left-radius: 0;
+    }
+
+    .round-bottom-left-percentage {
+        border-bottom-left-radius: 20px;
+    }
+
+    .point-zero .reverse {
+        flex-direction: column-reverse;
+    }
 }

@@ -31,10 +31,10 @@ of what each part of the calculator does -->
                     <div class="column">
                         <div class="modifiers-and-numbers">
                             <div class="modifiers">
-                                <div class="row">
+                                <div class="toogle-row-column">
                                     <span id="clear">C</span>
                                     <span id="sign">±</span>
-                                    <span id="percentage">%</span>
+                                    <span id="percentage" class="round-bottom-left-percentage">%</span>
                                 </div>
                             </div>
         
@@ -55,25 +55,29 @@ of what each part of the calculator does -->
                                     <span id="one">1</span>
                                 </div>
                             </div>   
-        
+                            <div class="point-zero">
+                                <div class="toogle-row-column reverse">
+                                    <span id="point" class="round-bottom-left">.</span>
+                                    <span id="zero">0</span>
+                                    <span id="back">&lt;</span>
+                                </div>
+                            </div>
                         </div>  
         
-                        <div class="point-zero">
-                            <div class="row">
-                                <span id="point" class="round-bottom-left">.</span>
-                                <span id="zero">0</span>
-                                <span id="back">&lt;</span>
-                            </div>
-                        </div>
+                        
 
                     </div>
     
-                   <div class="operations column">
+                   <div class="operations toogle-column-row">
+                      <div class="column">
                         <span id="division">÷</span>
                         <span id="multiplication">x</span>
                         <span id="subtraction">-</span>
+                      </div>
+                       <div class="column">
                         <span id="addition">+</span>
                         <span id="equal" class="round-bottom-right">=</span>
+                       </div>
 
                     </div>
                </div>
